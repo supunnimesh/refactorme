@@ -16,6 +16,8 @@ I would like you to create a simple page using ASP MVC to allow users to
 
 Note that I have intentionally introduced a few minor errors. 
 
+Please fork this project and once you're done send me the link to the repo in your account. Please don't submit a PR
+
 Some websites with background:
 
 Wilks Coefficient https://en.wikipedia.org/wiki/Wilks_Coefficient
