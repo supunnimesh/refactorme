@@ -4,7 +4,7 @@ public static class Wilks
 {
     // https://en.wikipedia.org/wiki/Wilks_Coefficient
     // Online Wilks calculator http://wilkscalculator.com/kg 
-    public decimal CalculateWilks(double bodyWeight, bool isMale)
+    public static double CalculateWilks(double bodyWeight, bool isMale)
     {
         var a = -216.0475144;
         var b = 16.2606339;
@@ -22,7 +22,7 @@ public static class Wilks
             f = -0.00000009054;
         }
 
-        var coefficient = (500 / 
+        return (500 / 
 			(
 				a + 
 				b * bodyWeight + 
@@ -32,7 +32,5 @@ public static class Wilks
 				f * Math.Pow(bodyWeight, 5)
 			)
 		);
-
-        return coefficient;
     }
 }
